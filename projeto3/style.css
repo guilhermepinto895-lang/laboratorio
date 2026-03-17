@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+header nav > ul > li > a {
+  color: #202020;
+  padding: 35px 0;
+  border-top-width: 5px;
+  border-top-style: solid;
+  border-top-color: white;
+}
+header nav > ul > li > a:hover {
+  border-top-color: tomato;
+}
+.hero {
+  background-image: url('./img/section1-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.hero form {
+  width: 375px;
+}
