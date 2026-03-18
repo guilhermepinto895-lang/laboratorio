@@ -27,6 +27,12 @@
 .align-items-center {
     align-items: center;
 }
+.text-center {
+  text-align: center;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
 .text-decoration-none {
     text-decoration: none;
 }
@@ -74,4 +80,16 @@
 .btn-dark {
   background-color: #202020;
   color: white;
+}
+.fs-1 {
+  font-size: 40px;
+}
+.fs-2 {
+  font-size: 32px;
+}
+.fs-3 {
+  font-size: 28px;
+}
+.fs-5 {
+  font-size: 20px;
 }
