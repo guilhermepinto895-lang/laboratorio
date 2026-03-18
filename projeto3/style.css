@@ -5,6 +5,15 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+header h1 {
+  width: 128px;
+  height: 128px;
+  background-image: url('./img/logo.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  font-size: 0;
+}
 header nav > ul > li > a {
   color: #202020;
   padding: 35px 0;
