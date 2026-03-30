@@ -32,4 +32,9 @@ header nav > ul > li > a:hover {
 }
 .hero form {
   width: 375px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.servicos .d-flex > div {
+  width: 33.33%;
 }
