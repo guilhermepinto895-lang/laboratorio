@@ -8,7 +8,7 @@ body {
 header h1 {
   width: 128px;
   height: 128px;
-  background-image: url('./img/logo.png');
+  background-image: url("./img/logo.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -25,7 +25,7 @@ header nav > ul > li > a:hover {
   border-top-color: tomato;
 }
 .hero {
-  background-image: url('./img/section1-bg.jpg');
+  background-image: url("./img/section1-bg.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -37,4 +37,79 @@ header nav > ul > li > a:hover {
 }
 .servicos .d-flex > div {
   width: 33.33%;
+}
+.servicos .capa {
+  aspect-ratio: 10/6;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.servicos p {
+  line-height: 22.5px;
+}
+.servicos a span:nth-child(1) {
+  background-color: #619137;
+  color: #fff;
+  padding: 2px 7.5px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.servicos a span:nth-child(2) {
+  color: #202020;
+}
+.servicos a:hover span:nth-child(1) {
+  background-color: tomato;
+  border-radius: 50%;
+}
+.sobre .item {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 20px 30px;
+}
+.produtos .imagem {
+  aspect-ratio: 1/1;
+}
+.produtos .imagem img {
+  width: 75%;
+}
+.produtos .card {
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.produtos .card:hover {
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.numeros i {
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.numeros h3 {
+  font-size: 30px;
+}
+.numeros .container > div {
+  width: 25%;
+}
+.numeros .container > div:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  right: 0;
+  bottom: 10%;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.marcas .d-flex > div {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+.marcas .d-flex > div:not(:last-child) {
+  border-right: 1px solid rgba(0, 0, 0, 0.125);
+}
+.marcas .d-flex:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
