@@ -113,3 +113,14 @@ header nav > ul > li > a:hover {
 .marcas .d-flex:not(:last-child) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
+.depoimentos .d-flex iframe {
+  width: 33.33%;
+  aspect-ratio: 3/2;
+}
+.galeria .d-flex div {
+  width: 25%;
+  aspect-ratio: 3/2;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
