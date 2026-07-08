@@ -5,14 +5,17 @@
 body {
   font-family: "Roboto", sans-serif;
 }
-header h1 {
-  width: 128px;
-  height: 128px;
-  background-image: url("./img/logo.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  font-size: 0;
+@media (max-width: 991px) {
+  header {
+    padding: 15px 0;
+  }
+}
+@media (max-width: 991px) {
+  #menu {
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+    margin-top: 15px;
+    padding-top: 15px;
+  }
 }
 header nav > ul > li > a {
   color: #202020;
@@ -21,8 +24,15 @@ header nav > ul > li > a {
   border-top-style: solid;
   border-top-color: white;
 }
-header nav > ul > li > a:hover {
-  border-top-color: tomato;
+@media (min-width: 992px) {
+  header nav > ul > li > a:hover {
+    border-top-color: tomato;
+  }
+}
+@media (max-width: 991px) {
+  header nav > ul > li > a {
+    padding: 10px 0;
+  }
 }
 .hero {
   background-image: url("./img/section1-bg.jpg");
@@ -34,6 +44,7 @@ header nav > ul > li > a:hover {
   width: 375px;
   border-top-left-radius: 30px;
   border-bottom-right-radius: 30px;
+  display: inline-block;
 }
 .servicos .d-flex > div {
   width: 33.33%;
@@ -123,4 +134,79 @@ header nav > ul > li > a:hover {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+.planos table {
+  border-collapse: collapse;
+}
+.planos td {
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  padding: 10px;
+}
+.planos table tr:first-child td:first-child {
+  border-top: none;
+  border-left: none;
+}
+.planos table tr:last-child td:first-child {
+  border-bottom: none;
+  border-left: none;
+}
+.planos table tr:first-child td:nth-child(3) {
+  background-color: tomato;
+  color: white;
+}
+.planos table tr:nth-child(2) td:not(:first-child) {
+  background-color: #619137;
+  color: white;
+}
+.planos table tr:nth-child(odd):not(:first-child) td {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.blog .capa {
+  aspect-ratio: 3/2;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.blog .d-flex > div {
+  width: 33.33%;
+}
+.dados .d-flex > div {
+  width: 33.33%;
+}
+.dados i {
+  color: rgba(255, 255, 255, 0.5);
+}
+.call-to-action a {
+  display: inline-block;
+  border: 3px solid rgba(255, 255, 255, 0.25);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 15px 90px;
+  border-radius: 10px;
+}
+.call-to-action a:hover {
+  background-color: white;
+  color: tomato;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer a:hover {
+  color: tomato;
+}
+footer .container:last-child {
+  margin-top: 50px;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  padding-top: 50px;
+}
+footer .container:first-child ul > li:not(:last-child) {
+  margin-bottom: 10px;
+}
+footer .container:last-child ul > li:not(:last-child) {
+  margin-right: 10px;
 }
